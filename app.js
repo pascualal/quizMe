@@ -40,3 +40,19 @@ form.addEventListener("submit",e => {
 
 //window object
 
+let buton = document.querySelector(".buton")
+const popup = document.querySelector(".popup-wrapper");
+let close = document.querySelector(".popup-close");
+
+buton.addEventListener("click", () => {
+    popup.setAttribute("style", "display: block")
+})
+
+
+close.addEventListener("click", () => {
+    popup.style.display = "none";
+})
+
+popup.addEventListener("click", () => {
+    popup.setAttribute("style", "display: none")
+})
